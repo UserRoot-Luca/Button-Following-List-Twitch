@@ -2,7 +2,7 @@
 // ==UserScript==
 // @name         Button Following List Twitch
 // @namespace    http://tampermonkey.net/
-// @version      1.2
+// @version      1.3
 // @description  ###
 // @author       UserRoot-Luca
 // @match        https://www.twitch.tv/*
@@ -22,7 +22,7 @@
                 if (e_userName && !e_className) {
                     let BadgeContainer = e_last.querySelector(".chat-line__username-container > span");
                     let MyBadge = document.createElement("div");
-                    MyBadge.setAttribute("class", "InjectLayout-sc-1i43xsx-0 hDgGYp");
+                    MyBadge.setAttribute("class", "InjectLayout-sc-1i43xsx-0 kFXyOc");
                     let userName = e_userName.textContent;
                     if (userName) {
                         let urlUserName = `https://www.twitchdatabase.com/following/${userName}`;
